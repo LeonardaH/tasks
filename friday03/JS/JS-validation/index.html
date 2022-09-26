@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootcamp</title>
+    <meta charset="UTF-8" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #password-checker-form {
+            max-width: 400px;
+            border: 1px solid #ddd;
+            padding: 1rem;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .password-strength {
+            height: 1rem;
+            margin: 1rem 0;
+            background-color: #ccc;
+        }
+
+        .password-strength-bar {
+            height: 100%;
+            width: 0%;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="password-checker-form">
+        <label>
+            <p>Password:</p>
+            <input type="password" name="password" id="password" />
+        </label>
+
+        <p>Password strength:</p>
+        <div class="password-strength">
+            <div class="password-strength-bar"></div>
+        </div>
+
+        <p>Password criteria:</p>
+        <ul class="password-criteria">
+            <li id="characters">At least 8 characters</li>
+            <li id="lowercase">At least 1 lowercase letter</li>
+            <li id="uppercase">At least 1 uppercase letter</li>
+            <li id="digit">At least 1 digit</li>
+            <li id="symbol">At least 1 symbol</li>
+            <li id="unique">At least 5 unique characters</li>
+        </ul>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

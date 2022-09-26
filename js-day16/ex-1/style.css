@@ -1,0 +1,32 @@
+button{
+    background-color:  turquoise;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+}
+
+#skip{
+    background-color: red;
+}
+
+.btn{
+    background-color: thistle;
+}
+
+#skipCount{
+    display: inline-block;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: white;
+}
+
+.result{
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+

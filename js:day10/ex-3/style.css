@@ -1,0 +1,14 @@
+.container{
+    background-color: antiquewhite;
+}
+section{
+    background-color: rgb(255, 255, 142);
+    height: 500px;
+}
+button{
+    background-color: beige;
+    padding: 20px;
+    border: none;
+    display: inline-block;
+    margin: auto;
+}

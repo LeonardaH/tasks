@@ -1,0 +1,12 @@
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+li{
+    list-style: none;
+    border-bottom: 1px solid gray;
+}
