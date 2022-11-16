@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  font-family: "Barlow Condensed";
+}
+
+.main {
+  padding: 64px;
+}
+@media (max-width: 375px) {
+  .main {
+    padding: 64px 0;
+  }
+}
+.main__description {
+  text-align: center;
+}
+@media (max-width: 375px) {
+  .main__description {
+    padding: 0 16px;
+  }
+}
+.main__description h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 59.4px;
+  padding-bottom: 16px;
+}
+@media (min-width: 375px) and (max-width: 799px) {
+  .main__description h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 375px) {
+  .main__description h1 {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+}
+.main__description p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  padding-bottom: 16px;
+}
+@media (max-width: 375px) {
+  .main__description p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.main__description a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+}
+@media (max-width: 375px) {
+  .main__description a {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+}
+.main__gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 116px;
+  padding-top: 64px;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .main__gallery {
+    gap: 40px;
+  }
+}
+@media (min-width: 375px) and (max-width: 799px) {
+  .main__gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 375px) {
+  .main__gallery {
+    padding: 32px 35.5px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+}
+.main__gallery h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 39.6px;
+  text-align: center;
+  padding-top: 32px;
+}
+@media (min-width: 375px) and (max-width: 799px) {
+  .main__gallery h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .main__gallery h2 {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+}
+.main__gallery__item__left {
+  position: relative;
+  text-align: center;
+}
+.main__gallery__item__left__background {
+  width: 100%;
+  height: 100%;
+  max-height: 253px;
+  max-width: 268px;
+  position: absolute;
+  left: -132px;
+  top: -49px;
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .main__gallery__item__left__background {
+    max-width: 226px;
+    max-height: 214px;
+    left: -100px;
+    top: -41px;
+  }
+}
+.main__gallery__item__middle {
+  position: relative;
+  text-align: center;
+}
+.main__gallery__item__middle__background {
+  width: 100%;
+  height: 100%;
+  max-height: 188px;
+  max-width: 233px;
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .main__gallery__item__middle__background {
+    width: 197px;
+    height: 159px;
+  }
+}
+.main__gallery__item__middle__background--1 {
+  position: absolute;
+  top: -32px;
+  right: -58px;
+}
+@media (max-width: 375px) {
+  .main__gallery__item__middle__background--1 {
+    top: -27px;
+    right: -49px;
+  }
+}
+.main__gallery__item__middle__background--2 {
+  top: 236px;
+  left: -91px;
+  position: absolute;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .main__gallery__item__middle__background--2 {
+    top: 112px;
+  }
+}
+@media (max-width: 375px) {
+  .main__gallery__item__middle__background--2 {
+    top: 199px;
+    left: -77px;
+  }
+}
+.main__gallery__item__right {
+  position: relative;
+  text-align: center;
+}
+.main__gallery__item__right__background {
+  width: 233px;
+  height: 188px;
+  position: absolute;
+  top: 232px;
+  right: -58px;
+  z-index: -1;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .main__gallery__item__right__background {
+    top: 114px;
+  }
+}
+@media (max-width: 375px) {
+  .main__gallery__item__right__background {
+    width: 197px;
+    height: 159px;
+    top: 196px;
+    right: -50px;
+  }
+}
+
+.img {
+  width: 100%;
+  max-width: 360px;
+  max-height: 360px;
+  border-radius: 50%;
+  z-index: 999;
+}
+@media (max-width: 375px) {
+  .img {
+    max-width: 304px;
+    max-height: 304px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

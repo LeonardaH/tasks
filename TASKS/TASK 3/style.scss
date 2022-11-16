@@ -1,0 +1,54 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1440px;
+
+    .mySwiper{
+        padding: 96px 0px 96px 64px;
+        background-color: #F3EDE5;
+
+        @media (max-width: 375px) {
+            padding: 96px 16px;
+        }
+
+        .container{
+            display: flex;
+            gap: 8px;
+            position: relative;
+        }
+    }
+
+    .swiper-button-prev{
+        color: transparent;
+        left: 82px;
+
+        @media (max-width: 375px) { 
+            display: none;
+        }
+    }
+
+    .swiper-button-next{
+        right: 0;
+        color: transparent;
+    }
+}
+
+.swiper-slide{
+    max-width: 468px;
+    max-height: 585px;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 375px) { 
+        width: 100%!important;
+        height: 100%!important;
+    }
+}
+
+

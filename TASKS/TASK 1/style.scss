@@ -1,0 +1,152 @@
+@import "./base/mixin";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1440px;
+    font-family: 'Fira Sans';
+}
+
+.main{
+    display: flex;
+
+    @include mobile-s{
+        display: block;
+    }
+
+    @include mobile-xs{
+        display: block;
+    }
+
+    img{
+        width: 100%;
+        max-width: 50%;
+
+        @include mobile-s{
+            width: 100%;
+            float: left;
+            max-width: 100%;
+        }
+
+        @include mobile-xs{
+            width: 100%;
+            max-width: 100%;
+            float: left;
+        }
+    }
+
+    &__description{
+        width: 100%;
+        max-width: 50%;
+        background-color: #E3CFCF;
+        padding: 120px 104px;
+        text-align: center;
+
+        @include tablet-s{
+            padding: 60px;
+        }
+
+        @include mobile-s{
+            width: 100%;
+            max-width: 100%;
+            padding: 62px 16px;
+            clear: left;
+        }
+
+        @include mobile-xs{
+            width: 100%;
+            max-width: 100%;
+            padding: 62px 16px;
+            clear: left;
+        }
+        
+        h1{
+            text-transform: uppercase;
+            font-weight: 275;
+            padding-bottom: 16px;
+            font-size: 32px;
+            line-height: 41.6px;
+
+            @include mobile-xs{
+                font-size: 24px;
+                line-height: 31.2px;
+            }
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 23.4px;
+
+            @include mobile-xs{
+                font-size: 16px;
+                line-height: 20.8px;
+            }
+        }
+
+        &__more{
+            display: none;
+        }
+
+        a{
+            padding: 12px 24px;
+            border: 1px solid black;
+            background-color: transparent;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: black;
+            line-height: 18.2px;
+            display: inline-block;
+            margin-top: 24px;
+            transition: 1s all ease;
+
+
+            @include mobile-xs{
+                padding: 16px 24px;
+                font-size: 12px;
+                line-height: 15.6px;
+            }
+        }
+    }
+}
+
+
+// js classes
+
+.none{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+// animated text
+
+.animate {
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    background: linear-gradient(90deg, #000, #000, #000);
+    background-repeat: no-repeat;
+    background-size: 160%;
+    margin: 0 auto;
+    animation: animate 4s linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
